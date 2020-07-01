@@ -1,16 +1,71 @@
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', serif;
 	font-size: 16px; 
 	margin: 0;
 	padding: 0;
+	letter-spacing: 0em;
 }
 
 main {
 	overflow: hidden;
 }
 
-/* button */
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	color: #2d3033;
+	text-transform: uppercase;
+	opacity: 0.8;
+	margin: 0;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 42px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+{
+	outline: none;
+}
+
 .btn  {
  	border-radius: 5px;
  	padding: 15px 65px;
@@ -40,11 +95,9 @@ main {
 }
 
 
-/* content */
-.content {
+/* container */
+.container {
 	max-width: 1250px;
-	margin: 0 auto;
-	padding: 0 18px;
 }
 
 
@@ -70,13 +123,10 @@ main {
 /* nav */
 .nav {
 	background-color: #313030;
+	justify-content: center;
 }
 .nav ul {
-	background-color: #313030;
 	display: flex;
-	justify-content: center;
-   list-style: none;
-   margin:0;
 }
 .nav__item a {
 	display: block;
@@ -106,33 +156,16 @@ main {
 	padding-bottom: 120px;
 	background-color: #f6f2f2;
 }
-.intro__inner {
-	display: flex;
-	justify-content: space-between;
-}
-.intro__description {
-	width: 50%;
-}
-.intro__video {
-	width: 50%;
-	display: contents;
-}
-.intro__title {
-	margin: 0;
-	font-size: 60px;
-	line-height: 72px;
-	text-transform: uppercase;
-}
+
 .intro__text {
-	font-size: 16px;
 	line-height: 28px;
 	margin-top: 28px;
 	margin-bottom: 60px;
-	padding-right: 90px;
 }
 .intro__frame {
 	position: relative;
-	width: 551px;
+	width: 100%;
+	max-width: 551px;
 	height: 356px; 
 	background-color: #000;
   	box-shadow: 0px 14px 73px 0px rgba(0, 0, 0, 0.29);
@@ -168,8 +201,6 @@ main {
 	padding: 110px 0px;
 }
 .services__inner {
-	display: flex;
-	justify-content: space-between;
 	position: relative;
 }
 .services__inner:after {
@@ -181,44 +212,15 @@ main {
 	height: 2px;
 	background-color: #ececec;
 }
-.services__description {
-	width: 50%;
-}
-.services__list {
-	width: 50%;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-.services__title {
-	margin: 0;
-	font-size: 42px;
-	line-height: 55px;
-	text-transform: uppercase;
-	opacity: 0.8;
-}
 .services__text {
-	font-size: 16px;
 	line-height: 28px;
 	margin-top: 28px;
 	margin-bottom: 60px;
-	padding-right: 90px;
 }
 .services__item {
-	width: 50%;
-}
-.services__item div {
-	padding: 0 17px;
-}
-.services__item:first-child {
-	margin-bottom: 40px;
-}
-.services__item:nth-child(2) {
-	margin-bottom: 40px;
+	margin: 15px 0;
 }
 .services__item-title {
-	margin: 0;
-	font-size: 24px;
 	padding-top: 20px;
 }
 .services__item-text {
@@ -233,15 +235,7 @@ main {
 .portfolio__description {
 	text-align: center;
 }
-.portfolio__title {
-	margin: 0;
-	font-size: 42px;
-	line-height: 55px;
-	text-transform: uppercase;
-	opacity: 0.8;
-}
 .portfolio__text {
-	width: 600px;
 	margin: 0 auto;
 	padding: 25px 0 50px;
 	position: relative;
@@ -279,14 +273,14 @@ main {
 	opacity: 1;
 }
 
-.gallery__images {
+.gallery {
 	display: flex;
 	flex-wrap: wrap;
 }
 .gallery__product {
-	width: 24%;
+	width: 25%;
 	height: 290px;
-   padding: 5px;
+	padding: 15px;
    overflow: hidden;
 }
 .gallery__product img {
@@ -305,17 +299,9 @@ main {
 .about {
 	padding: 65px 0px 55px;
 }
-.about__title {
-	margin: 0;
-	font-size: 42px;
-	text-transform: uppercase;
-	opacity: 0.8;
-}
 .about__text {
-	width: 450px;
 	padding: 25px 0 50px;
 	position: relative;
-	opacity: 0.8;
 }
 .about__text:after {
 	position: absolute;
@@ -338,27 +324,23 @@ main {
    text-align: center;
 }
 .mailing__title {
-	margin: 0;
-	font-size: 42px;
-	line-height: 38px;
 	letter-spacing: 2.5px;
 	color: #ffffff;
-	opacity: 0.8;
+	text-transform: none;
 }
 .mailing__text {
 	text-align: center;
 	padding: 30px 0;
 	color: #ffffff;
-	opacity: 0.8;
 }
-#mailing input[type=text] {
+#mailing input[type=email] {
 	padding: 25px;
 	font-size: 18px;
 	border: none;
 	background-color: #fff;
 	color: #2c2c2c;
-	width: 520px;
 	border-radius: 5px;
+	width: 500px;
 }
 #mailing .btn.red {
 	text-transform: uppercase;
@@ -370,16 +352,8 @@ main {
 #contact {
 	padding: 100px 0;
 }
-.contact__title {
-	margin: 0;
-	font-size: 42px;
-	text-transform: uppercase;
-	opacity: 0.8;
-}
 .contact__text {
-	width: 55%;
 	padding: 40px 0 50px;
-	opacity: 0.7;
 	position: relative;
 }
 .contact__text:after {
@@ -392,28 +366,24 @@ main {
 	height: 2px;
 	background-color: #ff2d2d;
 }
-.contact__inner {
-	display: flex;
-	justify-content: space-between;
-}
 .contact__form {
-	padding: 40px 0 0;
+	margin: 40px 0 0;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	width: 65%;
 }
-.contact__form input {
-	width: 33%;
-	margin: 24px 0;
+.contact__form-name,
+.contact__form-mail {
+	margin-bottom: 40px;
 	padding: 20px 50px 20px 50px;
 	border: 0;
 	border-radius: 5px;
 	background-color: #e5e5e5;
 	font-size: 18px;
+	width: 47%;
 }
 .contact__form textarea {
-	margin: 24px 0;
+	margin-bottom: 40px;
 	padding: 20px 50px 20px 50px;
 	resize: none;
 	width: 100%;
@@ -431,28 +401,24 @@ main {
 }
 .contact__info {
 	position: relative;
-	width: 35%;
-	margin-left: 100px;
 	background-color: #2d2d2d;
 	color: #ffffff;
+	margin: 40px 0px 0px 100px;
+	padding: 140px 80px;
 }
 .contact__info:after {
 	position: absolute;
 	content: "";
 	display: block;
-	right: -100%;
+	right: -99%;
 	top: 0;
 	height: 100%;
 	width: 100%;
 	background-color: #2d2d2d;;
 }
-.contact__info div {
-	padding: 140px 80px;
-}
 .contact__info h3 {
-	opacity: 0.8;
+	color: #ffffff;
 	font-size: 18px;
-	text-transform:uppercase;
 }
 .contact__info p {
 	opacity: 0.8;
@@ -463,10 +429,6 @@ main {
 #footer {
 	padding: 50px 0 40px;
 	background-color: #313030;
-}
-.footer__inner {
-	display: flex;
-	justify-content: space-between;
 }
 .footer__copyright {
 	text-align: left;

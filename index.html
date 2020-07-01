@@ -1,106 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Agency Landing Page | DjenyaSoft</title>
 
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link href="css/style.css" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="icon" href="#" type="image/x-icon">
+ 	<link rel="shortcut icon" href="#" type="image/x-icon"> 
 	
-	<title>Agnecy Landing Page | DjenyaSoft</title>
+	<!-- OG tags -->
+ 	<meta property="og:title" content="Agency Landing Page | DjenyaSoft">
+ 	<meta property="og:description" content=''>
+ 	<meta property="og:type" content="article">
+ 	<meta property="og:image" content="#">
+ 	<meta property="og:site_name" content="Agency Landing Page">
+
+	<!-- Open+Sans Slab Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!-- Bootstrap Reboot CSS -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/style.css">	
 </head>
 <body>
-
-	<main>
-
-		<header class="header" id="header">
-			<div class="content">
-				<nav class="nav" id="nav">
-					<ul>
-						<li class="nav__item active"><a href="#">Home</a></li>
-				      <li class="nav__item"><a href="#services">services</a></li>
-					   <li class="nav__item"><a href="#portfolio">portfolio</a></li>
-					   <li class="nav__item"><a href="#about">about us</a></li>
-					   <li class="nav__item"><a href="#contact">contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-
-
-		<section class="intro" id="intro">
-			<div class="content">
-				<div class="intro__inner">
-					<div class="intro__description">
-						<h1 class="intro__title">our strong  organaisation</h1>
-						<div class="intro__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</div>	
-						<a class="btn red" href="#contact">Contact Us</a>
-					</div>
-					<div class="intro__video">
-						<div class="intro__frame">
-							<button id="btn_videoplay" class="btn-videoplay" type="button"></button>
-							<video id="video-intro" loop width="100%" height="100%" poster="video/poster.jpg">
-								<source src="video/video.mp4" type="video/mp4">
-								Your browser does not support the video tag.
-							</video>
-						</div>
-					</div>	
+<main>
+	<header class="header" id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav class="nav" id="nav">
+						<ul>
+							<li class="nav__item active"><a href="#">Home</a></li>
+						   <li class="nav__item"><a href="#portfolio">portfolio</a></li>
+						   <li class="nav__item"><a href="#about">about us</a></li>
+						   <li class="nav__item"><a href="#contact">contact</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
-		</section>
-		
+		</div>
+	</header>
+
+
+	<section class="intro" id="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+						<h1 class="intro__title">our strong  organaisation</h1>
+						<p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>	
+						<a class="btn red" href="#contact">Contact Us</a>
+				</div>	
+				<div class="col-lg-6 col-md-12">
+					<div class="intro__frame">
+						<button id="btn_videoplay" class="btn-videoplay" type="button"></button>
+						<video id="video-intro" loop width="100%" height="100%" poster="video/poster.jpg">
+							<source src="video/video.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+			
+	<section class="services" id="services">
+		<div class="container">
+			<div class="services__inner">
 				
-		<section class="services" id="services">
-			<div class="content">
-				<div class="services__inner">
-					<div class="services__description">
+				<div class="row">
+					<div class="col-lg-6 col-md-12">
 						<h2 class="services__title">do you know we can provide for you ?</h2>
-						<div class="services__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.</div>	
+						<p class="services__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.</p>	
 						<a class="btn white" href="#contact">Learn More</a>
 					</div>
-					<div class="services__list">
-						<div class="services__item">
-							<div>
-								<img class="services__item-icon" src="images/services/Settings.png"></>
-								<h3 class="services__item-title">Management</h3>	
-								<span class="services__item-text">Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor</span>
+					<div class="col-lg-6 col-md-12">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="services__item">
+									<img class="services__item-icon" src="images/services/Settings.png"></>
+									<h3 class="services__item-title">Management</h3>	
+									<p class="services__item-text">Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="services__item">
+									<img class="services__item-icon" src="images/services/Pencil.png"></>
+									<h3 class="services__item-title">UI /UX Design</h3>
+									<p class="services__item-text">Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor sit amet,</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="services__item">
+									<img class="services__item-icon" src="images/services/Diamond.png"></>
+									<h3 class="services__item-title">Logo / Branding</h3>	
+									<p class="services__item-text">Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioeew idolor sit amet,</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="services__item">
+									<img class="services__item-icon" src="images/services/Truck.png"></>
+									<h3 class="services__item-title">Animation</h3>	
+									<p class="services__item-text">Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor sit amet, consect netur.</p>
+								</div>
 							</div>
 						</div>
-						<div class="services__item">
-							<div>
-								<img class="services__item-icon" src="images/services/Pencil.png"></>
-								<h3 class="services__item-title">UI /UX Design</h3>	
-								<span class="services__item-text">Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor sit amet,</span>
-							</div>
-						</div>
-						<div class="services__item">
-							<div>
-								<img class="services__item-icon" src="images/services/Diamond.png"></>
-								<h3 class="services__item-title">Logo / Branding</h3>	
-								<span class="services__item-text">Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioeew idolor sit amet,</span>
-							</div>
-						</div>
-						<div class="services__item">
-							<div>
-								<img class="services__item-icon" src="images/services/Truck.png"></>
-								<h3 class="services__item-title">Animation</h3>	
-								<span class="services__item-text">Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor sit amet, consect netur.</span>
-							</div>
-						</div>
-					</div>	
-				</div>		
-			</div>
-		</section>	
-
-		
-		<section class="portfolio" id="portfolio">
-			<div class="content">
-				<div class="portfolio__description">
-					<h2 class="portfolio__title">feature products</h2>
-					<div class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor incididunt ut labore et.</div>	
+					</div>
 				</div>	
+
+			</div>		
+		</div>
+	</section>	
+
+	
+	<section class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					
+					<div class="portfolio__description">
+						<h2 class="portfolio__title">feature products</h2>
+						<p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor incididunt ut labore et.</p>	
+					</div>	
 				
 					<div class="gallery__filter">
 		            <button class="filter-button active" data-filter="all">All</button>
@@ -109,19 +137,20 @@
 		            <button class="filter-button" data-filter="user">user interface</button>
 		            <button class="filter-button" data-filter="mock">mock-up</button>
 	        		</div>
-					<div class="gallery__images">
+
+					<div class="gallery">
 		            <div class="gallery__product filter print">
 		                <img src="images/gallery/1.jpg" class="img-responsive">
 		            </div>
-
+				
 		            <div class="gallery__product filter web">
 		                <img src="images/gallery/2.jpg" class="img-responsive">
 		            </div>
-
+			
 		            <div class="gallery__product filter user">
 		                <img src="images/gallery/3.jpg" class="img-responsive">
 		            </div>
-
+				
 		            <div class="gallery__product filter print">
 		                <img src="images/gallery/4.jpg" class="img-responsive">
 		            </div>
@@ -138,67 +167,84 @@
 		                <img src="images/gallery/7.jpg" class="img-responsive">
 		            </div>
 
-		            <div class="gallery__product filter mock">
-		               <img src="images/gallery/8.jpg" class="img-responsive">
-		            </div>
+				      <div class="gallery__product filter mock">
+				         <img src="images/gallery/8.jpg" class="img-responsive">
+				      </div>
+					</div>
 
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section class="about" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="about__title">Meet our team</h2>
+					<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.</p>	
+					<div class="about__inner">
+						<div class="about__foto">выавыавыа</div>
+						<div class="about__team">ываыва</div>
 					</div>
 				</div>
-
 			</div>
-		</section>
+		</div>	
+	</section>	
 
-		
-		<section class="about" id="about">
-			<div class="content">
-				<h2 class="about__title">Meet our team</h2>
-				<div class="about__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.</div>	
-				<div class="about__inner">
-					<div class="about__foto">выавыавыа</div>
-					<div class="about__team">ываыва</div>
+	
+	<section class="mailing" id="mailing">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="mailing__title">Design tips, tricks, and freebies. Delivered weekly.</h2>
+					<p class="mailing__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
+					<input type="email" placeholder="Email Address...">
+					<a class="btn red" href="#">subscribe</a>
 				</div>
-			</div>	
-		</section>	
-
-		
-		<section class="mailing" id="mailing">
-			<div class="content">
-				<h2 class="mailing__title">Design tips, tricks, and freebies. Delivered weekly.</h2>
-				<div class="mailing__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</div>
-				<input type="text" placeholder="Email Address...">
-				<a class="btn red" href="#">subscribe</a>
-			</div>	
-		</section>	
+			</div>
+		</div>	
+	</section>	
 
 
-		<section class="contact" id="contact">
-			<div class="content">
-				<h2 class="contact__title">get in touch</h2>
-				<div class="contact__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</div>
-				<div class="contact__inner">
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<h2 class="contact__title">get in touch</h2>
+					<p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-7">
 					<div class="contact__form">
-						<input type="text" placeholder="Name">	
-						<input type="text" placeholder="Your Mail">	
+						<input type="text" placeholder="Name" class="contact__form-name">	
+						<input type="text" placeholder="Your Mail" class="contact__form-mail">	
 						<textarea rows="10" placeholder="Type your message"></textarea>
 						<a class="btn red" href="#">Send message</a>
 					</div>
+				</div>
+				<div class="col-lg-5">
 					<div class="contact__info">
-						<div>
-							<h3>contact info</h3>
-							<p>Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</p>
-							<p>redwan@deviserweb.com</p>
-							<p>(+88) 017 617 46373</p>
-						</div>	
+						<h3>contact info</h3>
+						<p>Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</p>
+						<p>redwan@deviserweb.com</p>
+						<p>(+88) 017 617 46373</p>	
 					</div>
 				</div>
-			</div>	
-		</section>	
+			</div>
+		</div>	
+	</section>	
 
 
-		<footer class="footer" id="footer">
-			<div class="content">
-				<div class="footer__inner">
-					<div class="footer__copyright">© Copyright @Junaed 2016, All rights reserved.</div>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-sm-12">
+					<div class="footer__copyright">© Copyright DjenyaSoft 2020, All rights reserved.</div>
+				</div>
+				<div class="col-lg-3 col-sm-12">
 					<div class="footer__icons">
 						<a href="#"><i class="fab fa-twitter"></i></a>
 						<a href="#"><i class="fab fa-invision"></i></a>
@@ -207,13 +253,14 @@
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
 
-	</main>
-
+	
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/app.js"></script>
 
+</main>
 </body>
 </html>
