@@ -38,10 +38,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 60px;
+	font-weight: 800;
 }
 
 h2 {
-	font-size: 42px;
+	font-size: 42.216px;;
 }
 
 h3 {
@@ -68,7 +69,7 @@ button, button:hover, button:focus, button:active
 
 .btn  {
  	border-radius: 5px;
- 	padding: 15px 65px;
+ 	padding: 10px 63px;
  	font-size: 18px;
  	font-weight: bold;
  	line-height: 1.878;
@@ -97,13 +98,13 @@ button, button:hover, button:focus, button:active
 
 /* container */
 .container {
-	max-width: 1250px;
+	max-width: 1280px;
 }
 
 
 /* header */
 .header {
-	padding-top: 30px;
+	padding-top: 29px;
 	background-color: #f6f2f2;
 	z-index: 1000;
 }
@@ -130,7 +131,7 @@ button, button:hover, button:focus, button:active
 }
 .nav__item a {
 	display: block;
-	padding: 30px 22px 30px 22px;
+	padding: 38px 22px 30px 22px;
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -152,19 +153,25 @@ button, button:hover, button:focus, button:active
 
 /* intro */
 #intro {
-	padding-top: 100px;
-	padding-bottom: 120px;
+	padding-top: 95px;
+	padding-bottom: 115px;
 	background-color: #f6f2f2;
 }
-
+.intro__title {
+	letter-spacing: 5px;
+}
 .intro__text {
 	line-height: 28px;
-	margin-top: 28px;
-	margin-bottom: 60px;
+	margin: 16px 0px 53px 0px;
+	width: 100%;
+   max-width: 520px;
 }
 .intro__frame {
 	position: relative;
 	width: 100%;
+	margin-left: auto;
+   margin-right: 0;
+   margin-top: 5px;
 	max-width: 551px;
 	height: 356px; 
 	background-color: #000;
@@ -198,7 +205,7 @@ button, button:hover, button:focus, button:active
 
 /* services */
 #services {
-	padding: 110px 0px;
+	padding: 100px 0;
 }
 .services__inner {
 	position: relative;
@@ -207,38 +214,46 @@ button, button:hover, button:focus, button:active
 	position: absolute;
 	content: "";
 	display: block;
-	bottom: -110px;
+	bottom: -67px;
 	width: 100%;
 	height: 2px;
 	background-color: #ececec;
 }
+.services__title {
+	line-height: 1.31;
+}
 .services__text {
-	line-height: 28px;
-	margin-top: 28px;
-	margin-bottom: 60px;
+	margin: 35px 0 50px 0;
+	line-height: 1.75;
+	width: 100%;
+	max-width: 500px;
 }
 .services__item {
-	margin: 15px 0;
+	margin: 5px 0px 15px 0px;
 }
 .services__item-title {
-	padding-top: 20px;
+	padding-top: 25px;
+	text-transform: none;
 }
 .services__item-text {
 	padding-top: 15px;
+	line-height: 1.75;
 }
 
 
 /* portfolio */
 #portfolio {
-	padding: 100px 0px 65px;
+	padding: 60px 0;
 }
 .portfolio__description {
 	text-align: center;
 }
 .portfolio__text {
 	margin: 0 auto;
-	padding: 25px 0 50px;
+	padding: 25px 0 30px;
 	position: relative;
+	width: 100%;
+	max-width: 500px;
 }
 .portfolio__text:after {
 	position: absolute;
@@ -253,8 +268,7 @@ button, button:hover, button:focus, button:active
 }
 
 .gallery__filter {
-	margin-top: 90px;
-	margin-bottom: 50px;
+	margin: 80px 0 60px 0;
 	text-align: center;
 }
 .filter-button {
@@ -262,7 +276,7 @@ button, button:hover, button:focus, button:active
 	font-weight: bold;
 	border: none;
 	background: none;
-	padding: 0 20px;
+	padding: 0 25px 0 25px;
 	text-transform: uppercase;
 	outline-style: none;
 	opacity: 0.7;
@@ -279,8 +293,8 @@ button, button:hover, button:focus, button:active
 }
 .gallery__product {
 	width: 25%;
-	height: 290px;
-	padding: 15px;
+	height: 300px;
+	padding: 10px;
    overflow: hidden;
 }
 .gallery__product img {
@@ -297,11 +311,12 @@ button, button:hover, button:focus, button:active
 
 /* about */
 .about {
-	padding: 65px 0px 55px;
+	padding: 65px 0px 110px;
 }
 .about__text {
 	padding: 25px 0 50px;
 	position: relative;
+	max-width: 450px;
 }
 .about__text:after {
 	position: absolute;
@@ -313,7 +328,40 @@ button, button:hover, button:focus, button:active
 	height: 2px;
 	background-color: #ff2d2d;
 }
-
+.about__inner {
+	margin-top: 55px;
+}
+.about__bigfoto {
+	width: 100%;
+	height: auto;
+	padding-right: 65px;
+}
+.about__subtitle {
+	padding-top: 20px;
+	font-size: 30px;
+}
+.about__subtext {
+	margin-top: 35px;
+	max-width: 700px;
+}
+.about__sociallink {
+	display: flex;
+	padding: 25px 0;
+}
+.about__sociallink li {
+	padding-right: 30px;
+}
+.about__sociallink a {
+	color: #000000;
+	font-style: italic;
+	font-size: 18px;
+}
+.about__team {
+	padding-top: 45px;	
+}
+.about__team img {
+	width: 100%;
+}
 
 /* mailing */
 #mailing {
@@ -340,7 +388,8 @@ button, button:hover, button:focus, button:active
 	background-color: #fff;
 	color: #2c2c2c;
 	border-radius: 5px;
-	width: 500px;
+	max-width: 500px;
+	width: 100%;
 }
 #mailing .btn.red {
 	text-transform: uppercase;
