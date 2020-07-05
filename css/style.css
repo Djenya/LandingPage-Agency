@@ -49,8 +49,8 @@ h3 {
 	font-size: 24px;
 }
 
-h3 {
-	font-size: 24px;
+h4 {
+	font-size: 22px;
 }
 
 a, a:hover, a:active {
@@ -69,7 +69,7 @@ button, button:hover, button:focus, button:active
 
 .btn  {
  	border-radius: 5px;
- 	padding: 10px 63px;
+ 	padding: 10px 60px;
  	font-size: 18px;
  	font-weight: bold;
  	line-height: 1.878;
@@ -103,12 +103,12 @@ button, button:hover, button:focus, button:active
 
 
 /* header */
-.header {
+#header {
 	padding-top: 29px;
 	background-color: #f6f2f2;
 	z-index: 1000;
 }
-.header.fixed {
+#header.fixed {
     padding: 10px 0;
 
     background-color: #313030;
@@ -153,8 +153,7 @@ button, button:hover, button:focus, button:active
 
 /* intro */
 #intro {
-	padding-top: 95px;
-	padding-bottom: 115px;
+	padding: 95px 0 115px 0;
 	background-color: #f6f2f2;
 }
 .intro__title {
@@ -229,14 +228,14 @@ button, button:hover, button:focus, button:active
 	max-width: 500px;
 }
 .services__item {
-	margin: 5px 0px 15px 0px;
+	margin: 5px 0px 10px 0px;
 }
 .services__item-title {
-	padding-top: 25px;
+	padding-top: 27px;
 	text-transform: none;
 }
 .services__item-text {
-	padding-top: 15px;
+	padding-top: 10px;
 	line-height: 1.75;
 }
 
@@ -245,10 +244,11 @@ button, button:hover, button:focus, button:active
 #portfolio {
 	padding: 60px 0;
 }
-.portfolio__description {
+.portfolio__title {
 	text-align: center;
 }
 .portfolio__text {
+	text-align: center;
 	margin: 0 auto;
 	padding: 25px 0 30px;
 	position: relative;
@@ -310,13 +310,14 @@ button, button:hover, button:focus, button:active
 
 
 /* about */
-.about {
+#about {
 	padding: 65px 0px 110px;
 }
 .about__text {
-	padding: 25px 0 50px;
+	padding: 25px 0 30px;
 	position: relative;
 	max-width: 450px;
+	line-height: 28px;
 }
 .about__text:after {
 	position: absolute;
@@ -329,57 +330,66 @@ button, button:hover, button:focus, button:active
 	background-color: #ff2d2d;
 }
 .about__inner {
-	margin-top: 55px;
+	margin-top: 75px;
 }
 .about__bigfoto {
 	width: 100%;
-	height: auto;
-	padding-right: 65px;
+	height: 100%;
+	padding-right: 75px;
+}
+.about__team {
+	margin-left: -35px;
 }
 .about__subtitle {
-	padding-top: 20px;
+	padding-top: 5px;
 	font-size: 30px;
 }
 .about__subtext {
-	margin-top: 35px;
+	margin: 25px 0 0 0;
 	max-width: 700px;
+	line-height: 1.75;
 }
 .about__sociallink {
 	display: flex;
-	padding: 25px 0;
+	flex-wrap: wrap;
+	padding: 32px 0;
 }
 .about__sociallink li {
-	padding-right: 30px;
+	padding-right: 40px;
 }
 .about__sociallink a {
 	color: #000000;
 	font-style: italic;
 	font-size: 18px;
 }
-.about__team {
-	padding-top: 45px;	
+.about__foto {
+	margin: 30px 0 0;
 }
-.about__team img {
+.about__foto img {
 	width: 100%;
 }
 
 /* mailing */
 #mailing {
-	padding: 140px 0;
+	padding: 130px 0;
 	background-image: url(../images/mailing.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    text-align: center;
 }
 .mailing__title {
-	letter-spacing: 2.5px;
+	letter-spacing: 0.07rem;
 	color: #ffffff;
 	text-transform: none;
 }
 .mailing__text {
 	text-align: center;
 	padding: 30px 0;
+	margin: 0;
 	color: #ffffff;
+}
+#mailing form {
+	margin: 25px 0 5px 0;
 }
 #mailing input[type=email] {
 	padding: 25px;
@@ -390,6 +400,7 @@ button, button:hover, button:focus, button:active
 	border-radius: 5px;
 	max-width: 500px;
 	width: 100%;
+	margin-bottom: 15px;
 }
 #mailing .btn.red {
 	text-transform: uppercase;
@@ -402,8 +413,9 @@ button, button:hover, button:focus, button:active
 	padding: 100px 0;
 }
 .contact__text {
-	padding: 40px 0 50px;
+	padding: 35px 0 50px;
 	position: relative;
+	line-height: 1.75;
 }
 .contact__text:after {
 	position: absolute;
@@ -415,16 +427,17 @@ button, button:hover, button:focus, button:active
 	height: 2px;
 	background-color: #ff2d2d;
 }
+.contact__inner {
+	margin: 60px 0 0;
+}
 .contact__form {
-	margin: 40px 0 0;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-.contact__form-name,
-.contact__form-mail {
-	margin-bottom: 40px;
-	padding: 20px 50px 20px 50px;
+.contact__form input {
+	margin-bottom: 46px;
+	padding: 21px 50px 21px 50px;
 	border: 0;
 	border-radius: 5px;
 	background-color: #e5e5e5;
@@ -432,8 +445,8 @@ button, button:hover, button:focus, button:active
 	width: 47%;
 }
 .contact__form textarea {
-	margin-bottom: 40px;
-	padding: 20px 50px 20px 50px;
+	margin-bottom: 46px;
+	padding: 30px 50px 30px 50px;
 	resize: none;
 	width: 100%;
 	border: 0;
@@ -442,18 +455,19 @@ button, button:hover, button:focus, button:active
 	font-size: 18px;
 }
 #contact .btn.red {
-	margin-top: 24px;
 	text-transform: uppercase;
 	width: 100%;
 	text-align: center;
 	font-size: 18px;
+	padding: 18px 0;
 }
+
 .contact__info {
 	position: relative;
 	background-color: #2d2d2d;
 	color: #ffffff;
-	margin: 40px 0px 0px 100px;
-	padding: 140px 80px;
+	margin: 0 0 0 90px;
+	padding: 140px 10px 127px 80px;
 }
 .contact__info:after {
 	position: absolute;
@@ -468,14 +482,16 @@ button, button:hover, button:focus, button:active
 .contact__info h3 {
 	color: #ffffff;
 	font-size: 18px;
+	margin-bottom: 35px;
 }
 .contact__info p {
 	opacity: 0.8;
-	padding: 10px 0;
+	margin-bottom: 20px;
 }
 
 /* footer */
 #footer {
+	margin-top: 10px;
 	padding: 50px 0 40px;
 	background-color: #313030;
 }
@@ -495,4 +511,270 @@ button, button:hover, button:focus, button:active
 .footer__icons i {
 	margin-right: 25px;
 	font-size: 20px;
+}
+
+
+/* Media
+===================*/
+
+@media (max-width: 1200px) {
+	h1 {
+		font-size: 48px;
+	}
+	h2 {
+		font-size: 33px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	h4 {
+		font-size: 18px;
+	}
+
+	/* intro */
+	#intro {
+		padding: 75px 0;
+	}
+	.intro__text {
+		max-width: 100%;
+	}
+	/* services */
+	#services {
+		padding: 75px 0;
+	}
+	.services__col {
+		margin-top: 25px;
+	}
+	.services__text {
+   	max-width: 100%;
+   }
+   /* portfolio */
+   #portfolio {
+   	padding: 75px 0;
+   }
+   .gallery__filter {
+   	margin: 50px 0;
+   }
+   .gallery__product {
+		height: auto;
+	}
+   /* about */
+   #about {
+   	padding: 75px 0;
+   }
+   .about__text {
+   	max-width: 100%;
+   }
+   .about__sociallink {
+   	padding: 10px 0;
+   }
+   .about__foto {
+   	margin: 10px 0 0;
+   }
+   .about__team {
+   	margin: 0;
+	}
+	.about__bigfoto {
+   	padding: 0;
+	}
+   /* mailing */
+   #mailing {
+   	padding: 75px 0;
+   }
+   /* contact */
+   #contact {
+   	padding: 75px 0;
+   }
+   .contact__info {
+   	margin: 30px 0 0 0;
+   }
+   .contact__info:after {
+   	display: none;
+	}
+}
+
+@media (max-width: 991px) {
+	/* header */
+	#header {
+    padding: 0;
+    background-color: #313030;
+	}
+	#header.fixed {
+		padding: 0;
+	}
+	/* intro */
+	.intro__frame {
+		margin: 25px auto;
+	}
+	/* portfolio */
+	.filter-button {
+		padding: 0 15px 0 15px;
+		font-size: 18px;
+	}
+   .gallery__product {
+		width: 50%;
+	}
+	/* about */
+	.about__bigfoto {
+		width: auto;
+		height: 100%;
+		max-height: 410px;
+	}
+}
+
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 38px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	h3 {
+		font-size: 16px;
+	}
+	h4 {
+		font-size: 14px;
+	}
+	.btn {
+		padding: 10px 30px;
+	}
+	#mailing .btn.red {
+		padding: 15px 40px;
+	}
+	#contact .btn.red {
+		padding: 15px 0;
+	}
+
+	/* header */
+	#header.fixed .nav__item a,
+	.nav__item a {
+   	padding: 18px 20px 18px 20px;
+   	font-size: 12px;
+ 	}
+	/* intro */
+	#intro {
+		padding: 50px 0;
+	}
+	.intro__title {
+	    letter-spacing: 0px;
+	}
+	/* services */
+	#services {
+		padding: 50px 0;
+	}
+	.services__inner:after {
+		bottom: -50px;
+	}
+	/* portfolio */
+   #portfolio {
+   	padding: 50px 0;
+   }
+   .gallery__filter {
+   	margin: 30px 0;
+   }
+   /* about */
+   #about {
+   	padding: 50px 0;
+   }
+   .about__inner {
+		margin-top: 35px;
+	}
+   /* mailing */
+   #mailing {
+   	padding: 50px 0;
+   }
+   #mailing input[type=email] {
+   	padding: 22px;
+   }
+   /* contact */
+   #contact {
+   	padding: 50px 0;
+   }
+   .contact__inner {
+   	margin: 30px 0 0;
+   }
+   .contact__form input {
+		width: 100%;
+		margin-bottom: 25px;
+   }
+   .contact__form textarea {
+   	margin-bottom: 25px;
+   }
+   .contact__info {
+		padding: 90px 40px 90px 40px
+	}
+   /* footer */
+   .footer__copyright {
+   	text-align: center;
+   }
+   .footer__icons {
+   	margin-top: 10px;
+   	text-align: center;
+   }
+}
+
+
+@media (max-width: 414px) {
+	h1 {
+		font-size: 33px;
+	}
+	.btn {
+		padding: 5px 40px;
+	}
+	#mailing .btn.red {
+		padding: 10px 40px;
+	}
+	#contact .btn.red {
+		padding: 10px 0;
+	}
+
+	/* header */
+	#header.fixed .nav__item a,
+	.nav__item a {
+		padding: 18px 8px 18px 8px;
+	}
+	/* intro */
+	#intro {
+		padding: 40px 0;
+	}
+	.intro__frame {
+   	height: 250px;
+ 	}	
+ 	.intro__text {
+ 		margin: 15px 0px 15px 0px;
+ 	}
+ 	/* services */
+	#services {
+		padding: 40px 0;
+	}   
+	.services__inner:after {
+		bottom: -40px;
+	}
+	.services__text {
+   	margin: 25px 0 25px 0;
+ 	}
+	/* portfolio */
+   #portfolio {
+   	padding: 40px 0;
+   }
+   .gallery__product {
+		width: 100%;
+	}
+   /* about */
+   #about {
+   	padding: 40px 0;
+   }
+   .about__sociallink li {
+   	padding-right: 10px;
+	}
+   /* mailing */
+   #mailing {
+   	padding: 40px 0;
+   }
+   /* contact */
+   #contact {
+   	padding: 40px 0;
+	}
+
 }
