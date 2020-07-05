@@ -305,7 +305,7 @@ button, button:hover, button:focus, button:active
 	transition: .3s;
 }
 .gallery__product img:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 
@@ -336,6 +336,10 @@ button, button:hover, button:focus, button:active
 	width: 100%;
 	height: 100%;
 	padding-right: 75px;
+	transition: .3s;
+}
+.about__bigfoto:hover {
+	transform: scale(1.03);
 }
 .about__team {
 	margin-left: -35px;
@@ -367,6 +371,10 @@ button, button:hover, button:focus, button:active
 }
 .about__foto img {
 	width: 100%;
+	transition: .3s;
+}
+.about__foto img:hover {
+	transform: scale(1.03);
 }
 
 /* mailing */
@@ -404,7 +412,7 @@ button, button:hover, button:focus, button:active
 }
 #mailing .btn.red {
 	text-transform: uppercase;
-	padding: 23px 65px;
+	padding: 22px 65px;
 }
 
 
