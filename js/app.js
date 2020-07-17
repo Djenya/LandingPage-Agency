@@ -80,24 +80,6 @@ $(function() {
     });
 
 
-    /* VideoPlayer */
-    $("#btn_videoplay").on("click", function(event) {
-        event.preventDefault();
-
-        var myVideo = document.getElementById("video-intro"); 
-
-        if (myVideo.paused) {
-            myVideo.play(); 
-            $(this).addClass("hidden");
-        } else {
-            myVideo.pause(); 
-            $(this).removeClass("hidden");
-        }
-
-    }); 
-    
-
-
     /* Gallery */
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
